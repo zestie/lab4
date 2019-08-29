@@ -3,8 +3,20 @@ body {
     background-image: url(wallpaper.jpg);
 }
 
+h1 {
+    color: #2f009e;
+}
+
 h2 {
     display: inline;
+}
+
+a, h2 { 
+    color: #2f009e;
+}
+
+a:hover, h2:hover {
+    color: black;
 }
 
 table {
@@ -30,7 +42,7 @@ form {
 
 button {
     background-color: whitesmoke;
-    color: black;
+    color: #fdcad2;
     /*padding: 5px 5px;*/
     border-color: #dfc2f7;
     cursor: pointer;
@@ -42,5 +54,5 @@ button:hover {
     opacity: 0.8;
     background-color: #fdcad2;
     font: bolder;
-    color: white;
+    color: whitesmoke;
 }
