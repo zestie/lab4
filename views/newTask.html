@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>    
+        <a href="/"><h2>Home</h2></a>
+        <a href="/listtasks"><h2>List all tasks</h2></a><br><br>
+        <form action="/data" method="POST">
+            Task Name: &nbsp;<input type="text" name="name"></input><br><br>
+            Task Due: &nbsp;<input type="date" name="due"></input><br><br>
+            Task Desc: &nbsp;<input type="text" name="desc"></input><br><br>
+            <!-- <a  href="listAllTasks.html"><button type="submit" id="submit" name="submit"><h4>SUBMIT</h4></button></a> -->
+            <button><h4>SUBMIT</h4></button>
+        </form>
+    </body>
+</html>

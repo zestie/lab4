@@ -1,0 +1,46 @@
+body {
+    margin-left: 20%; 
+    background-image: url(wallpaper.jpg);
+}
+
+h2 {
+    display: inline;
+}
+
+table {
+    width: 100%;
+}
+
+input[type=text], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form {
+    margin-right: 50%; 
+    border-style: solid; 
+    border-color: #dfc2f7; 
+    padding: 1%; 
+    background-color: #dfc2f7;
+}
+
+button {
+    background-color: whitesmoke;
+    color: black;
+    /*padding: 5px 5px;*/
+    border-color: #dfc2f7;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 10%;
+}
+
+button:hover {
+    opacity: 0.8;
+    background-color: #fdcad2;
+    font: bolder;
+    color: white;
+}
