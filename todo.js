@@ -44,7 +44,7 @@ app.get('/', function(req, res) {
 app.get('/newtask', function(req, res) {
     console.log('add new Task request');
     //generate the relative path
-    let fileName = viewsPath + 'newTask.html';
+    let fileName = viewsPath + 'newtask.html';
     //send index.html back to the client
     res.sendFile(fileName);
 });
@@ -53,7 +53,7 @@ app.get('/newtask', function(req, res) {
     console.log('List all Tasks request');
     //page content should be generated dynamically
     //a copy of the array (db) will be sent to the rendering engine
-    res.render('listAllTasks.html', {
+    res.render('listtasks.html', {
         tasks: db
     });
 });
@@ -68,7 +68,7 @@ app.post('/data', function(req, res) {
     //bodyParser is responsible for generating the body object
     db.push(req.body);
     //redirect client to the listAllTasks.html page after pushing new task into the db
-    res.render('listAllTasks.html', {
+    res.render('listtasks.html', {
         tasks: db
     });
 });
